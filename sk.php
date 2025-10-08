@@ -13,8 +13,8 @@ function multiexplode($delimiters, $string)
   $two = explode($delimiters[0], $one);
   return $two;
 }
- $sk = $_GET['sec'];
-$lista = $_GET['lista'];
+ $sk = $argv[1];
+$lista = $argv[2];
  $cc = multiexplode(array(":", "|", ""), $lista)[0];
  $mes = multiexplode(array(":", "|", ""), $lista)[1];
   $ano = multiexplode(array(":", "|", ""), $lista)[2];
